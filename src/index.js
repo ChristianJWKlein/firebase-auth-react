@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css"; //Bootstrap styles
+import "./index.css"; //below bootstrap so we can override
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
