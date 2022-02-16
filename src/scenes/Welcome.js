@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
-
-export default function Welcome() {
+export default function Welcome({ user }) {
+  console.log(user);
   return (
     <>
       <h1>Welcome</h1>
-      <p>
-        Not a user? <Link to="/signup">Sign Up</Link>
-      </p>
+      <h2>{user.displayName || user.email}</h2>
+      {user.photoURL && (
+        <img src={user.photoURL} alt="Profile picture logged-in user" />
+      )}
     </>
   );
 }

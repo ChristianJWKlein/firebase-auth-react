@@ -8,9 +8,12 @@ function App() {
   const [user, setUser] = useState();
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
+      <Route path="/login" element={<Login setUser={setUser} />} />
       <Route path="/signup" element={<Singup setUser={setUser} />} />
-      <Route path="/" element={user ? <Welcome /> : <Login />} />
+      <Route
+        path="/"
+        element={user ? <Welcome user={user} /> : <Login setUser={setUser} />}
+      />
     </Routes>
   );
 }
