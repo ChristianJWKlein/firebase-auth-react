@@ -1,9 +1,36 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Singup() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    alert(`Trying to Signup as ${email}`);
+  };
   return (
     <>
       <h1>Signup</h1>
+      <hr />
+      <form onSubmit={handleFormSubmit}>
+        <label>
+          Email:
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </label>
+        <label>
+          Password:
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </label>
+        <input type="submit" value="Sign Up" />
+      </form>
       <p>
         Already a user? <Link to="/login">Login</Link>
       </p>
