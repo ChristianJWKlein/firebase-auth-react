@@ -13,3 +13,5 @@ Credentials file not needed
 for more info on authentication go to the Firebase Docs: [Firebase Docs](https://firebase.google.com/docs/firestore/quickstart)
 
 ![screenshot of project](screenshot.png)
+
+![gif example](screenrecording.gif)
