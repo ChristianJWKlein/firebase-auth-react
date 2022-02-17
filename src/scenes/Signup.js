@@ -14,6 +14,7 @@ export default function Singup({ setUser }) {
   const navigate = useNavigate();
   const provider = new GoogleAuthProvider();
   const auth = getAuth(app);
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)

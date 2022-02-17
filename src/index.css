@@ -15,7 +15,7 @@ input {
 }
 
 body {
-  background-color: darksalmon;
+  background-color: rgb(122, 220, 233);
 }
 
 @media (max-width: 600px) {

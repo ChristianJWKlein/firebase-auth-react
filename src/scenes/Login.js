@@ -51,7 +51,7 @@ export default function Login({ setUser, user }) {
       .catch(alert);
   };
 
-  console.log("Here is my user from my parent App compnonent", user);
+  console.log("Here is my user from my parent App component", user);
 
   return (
     <>
